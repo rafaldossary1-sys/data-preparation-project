@@ -14,6 +14,3 @@ le = LabelEncoder()
 df['species'] = le.fit_transform(df['species'])
 print("\nData after transformation:")
 print(df.head())
-
-# Intentional error
-df['species'] = df['species'].apply(lambda x: x / 0)
